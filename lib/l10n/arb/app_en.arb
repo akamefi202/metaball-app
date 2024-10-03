@@ -1,0 +1,411 @@
+{
+  "@@locale": "en",
+  "startingSoonLabel": "Recent",
+  "@startingSoonLabel": {
+    "description": ""
+  },
+  "filterLabel": "Filter",
+  "@filterLabel": {
+    "description": ""
+  },
+  "clubsLabel": "Clubs",
+  "@clubsLabel": {
+    "description": ""
+  },
+  "viewMoreLabel": "View More",
+  "@viewMoreLabel": {
+    "description": ""
+  },
+  "recommendedEventsLabel": "Recommended Events",
+  "@recommendedEventsLabel": {
+    "description": ""
+  },
+  "popularThemesLabel": "Popular Themes",
+  "@popularThemesLabel": {
+    "description": ""
+  },
+  "viewAllBlogsLabel": "View All Blogs",
+  "@viewAllBlogsLabel": {
+    "description": ""
+  },
+  "homeLabel": "Home",
+  "@homeLabel": {
+    "description": ""
+  },
+  "roundingLabel": "Rounding",
+  "@roundingLabel": {
+    "description": ""
+  },
+  "participationLabel": "Participation",
+  "@participationLabel": {
+    "description": ""
+  },
+  "messageLabel": "Message",
+  "@messageLabel": {
+    "description": ""
+  },
+  "profileLabel": "Profile",
+  "@profileLabel": {
+    "description": ""
+  },
+  "viewAllLabel": "View All",
+  "@viewAllLabel": {
+    "description": ""
+  },
+  "profilePageLabel": "Personal Page",
+  "@profilePageLabel": {
+    "description": ""
+  },
+  "autoRecruitLabel": "Automatic Recruitment",
+  "@autoRecruitLabel": {
+    "description": ""
+  },
+  "viewProfileLabel": "View Profile",
+  "@viewProfileLabel": {
+    "description": ""
+  },
+  "latestNewsTagLabel": "Latest News",
+  "@latestNewsTagLabel": {
+    "description": ""
+  },
+  "accountInformLabel": "Account Information",
+  "@accountInformLabel": {
+    "description": ""
+  },
+  "connectionLabel": "Connection",
+  "@connectionLabel": {
+    "description": ""
+  },
+  "postLabel": "Post",
+  "@postLabel": {
+    "description": ""
+  },
+  "servicesLabel": "Services",
+  "@servicesLabel": {
+    "description": ""
+  },
+  "customerServiceLabel": "Customer Service",
+  "@customerServiceLabel": {
+    "description": ""
+  },
+  "userGuideLabel": "User Guide",
+  "@userGuideLabel": {
+    "description": ""
+  },
+  "userAgreementLabel": "User Agreement",
+  "@userAgreementLabel": {
+    "description": ""
+  },
+  "companyInformLabel": "Company Information",
+  "@companyInformLabel": {
+    "description": ""
+  },
+  "messagePageLabel": "Messages",
+  "@messagePageLabel": {
+    "description": ""
+  },
+  "noMessageText1": "You haven't received any messages yet",
+  "@noMessageText1": {
+    "description": ""
+  },
+  "noMessageText2": "If you receive a new message, it will appear here.",
+  "@noMessageText2": {
+    "description": ""
+  },
+  "roundingRecruitLabel": "Rounding Recruitment",
+  "@roundingRecruitLabel": {
+    "description": ""
+  },
+  "hostLabel": "Hosted",
+  "@hostLabel": {
+    "description": ""
+  },
+  "requestLabel": "Requested",
+  "@requestLabel": {
+    "description": ""
+  },
+  "inviteLabel": "Invited",
+  "@inviteLabel": {
+    "description": ""
+  },
+  "followLabel": "Followed",
+  "@followLabel": {
+    "description": ""
+  },
+  "completeLabel": "Completed",
+  "@completeLabel": {
+    "description": ""
+  },
+  "joinTab": "Join",
+  "@joinTab": {
+    "description": ""
+  },
+  "hostTab": "Host",
+  "@hostTab": {
+    "description": ""
+  },
+  "roundSearchPlaceholder": "Golf course, username, etc.",
+  "@roundSearchPlaceholder": {
+    "description": ""
+  },
+  "hashtagLabel": "Hashtag",
+  "@hashtagLabel": {
+    "description": ""
+  },
+  "personalLabel": "Personal",
+  "@personalLabel": {
+    "description": ""
+  },
+  "hostPlaceLabel": "Host Place",
+  "@hostPlaceLabel": {
+    "description": ""
+  },
+  "allCountryLabel": "Japan",
+  "@allCountryLabel": {
+    "description": ""
+  },
+  "kantoLabel": "Kanto",
+  "@kantoLabel": {
+    "description": ""
+  },
+  "hokkaidoLabel": "Hokkaido",
+  "@hokkaidoLabel": {
+    "description": ""
+  },
+  "kansaiLabel": "Kansai",
+  "@kansaiLabel": {
+    "description": ""
+  },
+  "tohokuLabel": "Tohoku",
+  "@tohokuLabel": {
+    "description": ""
+  },
+  "chubuLabel": "Chubu",
+  "@chubuLabel": {
+    "description": ""
+  },
+  "chugokuLabel": "Chugoku",
+  "@chugokuLabel": {
+    "description": ""
+  },
+  "shikokuLabel": "Shikoku",
+  "@shikokuLabel": {
+    "description": ""
+  },
+  "kyushuLabel": "Kyushu",
+  "@kyushuLabel": {
+    "description": ""
+  },
+  "memberCountLabel": "Member Count",
+  "@memberCountLabel": {
+    "description": ""
+  },
+  "startDatePlaceholder": "Start Date",
+  "@startDatePlaceholder": {
+    "description": ""
+  },
+  "startTimePlaceholder": "Start Time",
+  "@startTimePlaceholder": {
+    "description": ""
+  },
+  "costPlaceholder": "Cost",
+  "@costPlaceholder": {
+    "description": ""
+  },
+  "basicInformLabel": "Basic Information",
+  "@basicInformLabel": {
+    "description": ""
+  },
+  "titlePlaceholder": "Title",
+  "@titlePlaceholder": {
+    "description": ""
+  },
+  "descriptionPlaceholder": "Brief introductions, etc. Up to 00 characters.",
+  "@descriptionPlaceholder": {
+    "description": ""
+  },
+  "golfCourseLabel": "Golf Course",
+  "@golfCourseLabel": {
+    "description": ""
+  },
+  "addressNamePlaceholder": "Address",
+  "@addressNamePlaceholder": {
+    "description": ""
+  },
+  "detailedAddressPlaceholder": "Detailed Address",
+  "@detailedAddressPlaceholder": {
+    "description": ""
+  },
+  "themeLabel": "Themes",
+  "@themeLabel": {
+    "description": ""
+  },
+  "restrictionLabel": "Restrictions (Optional)",
+  "@restrictionLabel": {
+    "description": ""
+  },
+  "ageLabel": "Age",
+  "@ageLabel": {
+    "description": ""
+  },
+  "saveButton": "Save",
+  "@saveButton": {
+    "description": ""
+  },
+  "hostButton": "Host",
+  "@hostButton": {
+    "description": ""
+  },
+  "blogLabel": "Blog",
+  "@blogLabel": {
+    "description": ""
+  },
+  "inPromotionLabel": "In Promotion",
+  "@inPromotionLabel": {
+    "description": ""
+  },
+  "trendingLabel": "Trending",
+  "@trendingLabel": {
+    "description": ""
+  },
+  "titleEditableBackgroundLabel": "Title is editable in background",
+  "@titleEditableBackgroundLabel": {
+    "description": ""
+  },
+  "latestLabel": "Latest",
+  "@latestLabel": {
+    "description": ""
+  },
+  "themeWelcomeNewcomerLabel": "Welcome Newcomers",
+  "@themeWelcomeNewcomerLabel": {
+    "description": ""
+  },
+  "themeWeekendGolfLabel": "Weekend Golf",
+  "@themeWeekendGolfLabel": {
+    "description": ""
+  },
+  "themeProBattleLabel": "Professional Battle",
+  "@themeProBattleLabel": {
+    "description": ""
+  },
+  "theme1n2dLabel": "2 Days & 1 Night",
+  "@theme1n2dLabel": {
+    "description": ""
+  },
+  "themeFreeLabel": "Free Participation",
+  "@themeFreeLabel": {
+    "description": ""
+  },
+  "themeDrinkLabel": "Drinking Party Available",
+  "@themeDrinkLabel": {
+    "description": ""
+  },
+  "themeEnteringLabel": "Beginner",
+  "@themeEnteringLabel": {
+    "description": ""
+  },
+  "themeMarriageLabel": "Couples",
+  "@themeMarriageLabel": {
+    "description": ""
+  },
+  "themeClubBattleLabel": "Club Battle",
+  "@themeClubBattleLabel": {
+    "description": ""
+  },
+  "restriction70yoLabel": "70 YO",
+  "@restriction70yoLabel": {
+    "description": ""
+  },
+  "restriction80yoLabel": "80 YO",
+  "@restriction80yoLabel": {
+    "description": ""
+  },
+  "restriction90yoLabel": "90 YO",
+  "@restriction90yoLabel": {
+    "description": ""
+  },
+  "restriction100yoLabel": "100 YO",
+  "@restriction100yoLabel": {
+    "description": ""
+  },
+  "femaleLabel": "Female",
+  "@femaleLabel": {
+    "description": ""
+  },
+  "maleLabel": "Male",
+  "@maleLabel": {
+    "description": ""
+  },
+  "noRestrictionLabel": "No Restriction",
+  "@noRestrictionLabel": {
+    "description": ""
+  },
+  "noRoundText": "There aren't any rounds yet",
+  "@noRoundText": {
+    "description": ""
+  },
+  "requestersLabel": "Requesters",
+  "@requestersLabel": {
+    "description": ""
+  },
+  "rejectButton": "Reject",
+  "@rejectButton": {
+    "description": ""
+  },
+  "acceptButton": "Accept",
+  "@acceptButton": {
+    "description": ""
+  },
+  "removeButton": "Remove",
+  "@removeButton": {
+    "description": ""
+  },
+  "averageScoreLabel": "Average Score",
+  "@averageScoreLabel": {
+    "description": ""
+  },
+  "experienceLabel": "Golf Calendar",
+  "@golfCalendarLabel": {
+    "description": ""
+  },
+  "monthAverageNumberLabel": "Average Number Per Month",
+  "@monthAverageNumberLabel": {
+    "description": ""
+  },
+  "pointLabel": "Points",
+  "@pointLabel": {
+    "description": ""
+  },
+  "yearLabel": "Years",
+  "@yearLabel": {
+    "description": ""
+  },
+  "numberLabel": "Times",
+  "@numberLabel": {
+    "description": ""
+  },
+  "yoLabel": "YO",
+  "@yoLabel": {
+    "description": ""
+  },
+  "occupationLabel": "Occupation",
+  "@occupationLabel": {
+    "description": ""
+  },
+  "locationLabel": "Location",
+  "@locationLabel": {
+    "description": ""
+  },
+  "affiliationLabel": "Affiliation",
+  "@affiliationLabel": {
+    "description": ""
+  },
+  "followingLabel": "Following",
+  "@followingLabel": {
+    "description": ""
+  },
+  "sLabel": "'s",
+  "@sLabel": {
+    "description": ""
+  }
+}

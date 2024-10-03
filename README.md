@@ -1,4 +1,4 @@
-# meteball_app
+# metaball_app
 
 A new Flutter project.
 
