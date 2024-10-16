@@ -24,8 +24,8 @@
   "@popularThemesLabel": {
     "description": ""
   },
-  "viewAllBlogsLabel": "View All Blogs",
-  "@viewAllBlogsLabel": {
+  "viewAllThemesLabel": "View All Themes",
+  "@viewAllThemesLabel": {
     "description": ""
   },
   "homeLabel": "Home",
@@ -364,7 +364,7 @@
   "@averageScoreLabel": {
     "description": ""
   },
-  "experienceLabel": "Golf Calendar",
+  "experienceLabel": "Experience",
   "@golfCalendarLabel": {
     "description": ""
   },
@@ -406,6 +406,470 @@
   },
   "sLabel": "'s",
   "@sLabel": {
+    "description": ""
+  },
+  "everyonePostTab": "Everyone's Posts",
+  "@everyonePostTab": {
+    "description": ""
+  },
+  "myPostTab": "My Posts",
+  "@myPostTab": {
+    "description": ""
+  },
+  "repliedPostTab": "Replied Posts",
+  "@repliedPostTab": {
+    "description": ""
+  },
+  "searchLabel": "Search",
+  "@searchLabel": {
+    "description": ""
+  },
+  "allPostTab": "All",
+  "@allPostTab": {
+    "description": ""
+  },
+  "experiencePostTab": "Experience",
+  "@experiencePostTab": {
+    "description": ""
+  },
+  "introductionPostTab": "Introduction",
+  "@introductionPostTab": {
+    "description": ""
+  },
+  "strangeNewsTab": "Strange News",
+  "@strangeNewsTab": {
+    "description": ""
+  },
+  "noBlogText": "There aren't any blogs yet",
+  "@noBlogText": {
+    "description": ""
+  },
+  "followedTab": "Followed",
+  "@followedTab": {
+    "description": ""
+  },
+  "followingTab": "Following",
+  "@followingTab": {
+    "description": ""
+  },
+  "noFollowerText": "There aren't any followers yet",
+  "@noFollowerText": {
+    "description": ""
+  },
+  "unfollowButton": "Unfollow",
+  "@unfollowButton": {
+    "description": ""
+  },
+  "myClubHeadingText": "How to join the club with ore friends How to join the club How to join the club with more friends How to join the club How to join the club with more friends How to explain.",
+  "@myClubHeadingText": {
+    "description": ""
+  },
+  "searchMoreClubsButton": "Search For More Clubs",
+  "@searchMoreClubsButton": {
+    "description": ""
+  },
+  "personLabel": "Person",
+  "@personLabel": {
+    "description": ""
+  },
+  "memberLabel": "Member",
+  "@memberLabel": {
+    "description": ""
+  },
+  "pastEventsLabel": "Past Events",
+  "@pastEventsLabel": {
+    "description": ""
+  },
+  "presidentLabel": "President",
+  "@presidentLabel": {
+    "description": ""
+  },
+  "activeRegionLabel": "Active Region",
+  "@activeRegionLabel": {
+    "description": ""
+  },
+  "memberEligibilityLabel": "Eligibility",
+  "@memberEligibilityLabel": {
+    "description": ""
+  },
+  "createClubLabel": "Create Club",
+  "@createClubLabel": {
+    "description": ""
+  },
+  "logoUploadText": "Add your club logo.\nPlease use JPG, PNG form. The recommended size is 680px or more.\nThe size is less than 4mb.",
+  "@logoUploadText": {
+    "description": ""
+  },
+  "clubNameLabel": "Club Name",
+  "@clubNameLabel": {
+    "description": ""
+  },
+  "memberQualificationLabel": "Member Qualification",
+  "@memberQualificationLabel": {
+    "description": ""
+  },
+  "ageRestrictionLabel": "Age Restriction",
+  "@ageRestrictionLabel": {
+    "description": ""
+  },
+  "majorActiveRegionLabel": "Major Active Region",
+  "@majorActiveRegionLabel": {
+    "description": ""
+  },
+  "memberApprovalLabel": "Member Approval",
+  "@memberApprovalLabel": {
+    "description": ""
+  },
+  "adminReviewLabel": "Administrator Review",
+  "@adminReviewLabel": {
+    "description": ""
+  },
+  "createRoundPermissionLabel": "Create Round Permission",
+  "@createRoundPermissionLabel": {
+    "description": ""
+  },
+  "presidentAdminPlaceholder": "President & Administrator",
+  "@presidentAdminPlaceholder": {
+    "description": ""
+  },
+  "createButton": "Create",
+  "@createButton": {
+    "description": ""
+  },
+  "clubIntroLabel": "Club Introduction",
+  "@clubIntroLabel": {
+    "description": ""
+  },
+  "addPhotoLabel": "Add Photo",
+  "@addPhotoLabel": {
+    "description": ""
+  },
+  "galleryLabel": "Gallery",
+  "@galleryLabel": {
+    "description": ""
+  },
+  "cameraLabel": "Camera",
+  "@cameraLabel": {
+    "description": ""
+  },
+  "pickImageLabel": "Select an image",
+  "@pickImageLabel": {
+    "description": ""
+  },
+  "viewAllReviewButton": "View All Reviews",
+  "@viewAllReviewButton": {
+    "description": ""
+  },
+  "contributorLabel": "Contributor",
+  "@contributorLabel": {
+    "description": ""
+  },
+  "reviewLabel": "レビュー",
+  "@reviewLabel": {
+    "description": ""
+  },
+  "caseLabel": "件",
+  "@caseLabel": {
+    "description": ""
+  },
+  "minuteBeforeLabel": "Minute(s) Ago",
+  "@minuteBeforeLabel": {
+    "description": ""
+  },
+  "hourBeforeLabel": "Hour(s) Ago",
+  "@hourBeforeLabel": {
+    "description": ""
+  },
+  "dayBeforeLabel": "Day(s) Ago",
+  "@dayBeforeLabel": {
+    "description": ""
+  },
+  "monthBeforeLabel": "Month(s) Ago",
+  "@monthBeforeLabel": {
+    "description": ""
+  },
+  "yearBeforeLabel": "Year(s) Ago",
+  "@yearBeforeLabel": {
+    "description": ""
+  },
+  "textInputPlaceholder": "Text Input",
+  "@textInputPlaceholder": {
+    "description": ""
+  },
+  "hostMemberLabel": "Host",
+  "@hostMemberLabel": {
+    "description": ""
+  },
+  "participatedLabel": "Participated",
+  "@participatedLabel": {
+    "description": ""
+  },
+  "golfCourseLabel": "Golf Course",
+  "@golfCourseLabel": {
+    "description": ""
+  },
+  "requestButton": "Request",
+  "@requestButton": {
+    "description": ""
+  },
+  "chatButton": "Chat",
+  "@chatButton": {
+    "description": ""
+  },
+  "recruitButton": "Invite",
+  "@recruitButton": {
+    "description": ""
+  },
+  "filteredResultLabel": "Filtered Results",
+  "@filteredResultLabel": {
+    "description": ""
+  },
+  "recruitAllButton": "Invite All",
+  "@recruitAllButton": {
+    "description": ""
+  },
+  "maleOnlyLabel": "Male Only",
+  "@maleOnlyLabel": {
+    "description": ""
+  },
+  "femaleOnlyLabel": "Female Only",
+  "@femaleOnlyLabel": {
+    "description": ""
+  },
+  "unlimitedLabel": "Unlimited",
+  "@unlimitedLabel": {
+    "description": ""
+  },
+  "confirmButton": "Confirm",
+  "@confirmButton": {
+    "description": ""
+  },
+  "golfClubCountLabel": "Number of golf clubs",
+  "@golfClubCountLabel": {
+    "description": ""
+  },
+  "editButton": "Edit",
+  "@editButton": {
+    "description": ""
+  },
+  "deleteButton": "Delete",
+  "@deleteButton": {
+    "description": ""
+  },
+  "classificationLabel": "Classification",
+  "@classificationLabel": {
+    "description": ""
+  },
+  "titleLabel": "Title",
+  "@titleLabel": {
+    "description": ""
+  },
+  "otherLabel": "Other",
+  "@otherLabel": {
+    "description": ""
+  },
+  "imageVideoLabel": "Image & Video",
+  "@imageVideoLabel": {
+    "description": ""
+  },
+  "cancelButton": "Cancel",
+  "@cancelButton": {
+    "description": ""
+  },
+  "postButton": "Post",
+  "@postButton": {
+    "description": ""
+  },
+  "leaveFeedbackLabel": "Leave a Message",
+  "@leaveFeedbackLabel": {
+    "description": ""
+  },
+  "allowLabel": "Allow",
+  "@allowLabel": {
+    "description": ""
+  },
+  "disallowLable": "Disallow",
+  "@disallowLable": {
+    "description": ""
+  },
+  "detailedInformLabel": "Details",
+  "@detailedInformLabel": {
+    "description": ""
+  },
+  "imageUploadText": "Dimensions of the number of pictures and video size limits. Please give me some advice.",
+  "@imageUploadText": {
+    "description": ""
+  },
+  "noticeLabel": "Notification",
+  "@noticeLabel": {
+    "description": ""
+  },
+  "turnedOnLabel": "Turned On",
+  "@turnedOnLabel": {
+    "description": ""
+  },
+  "turnedOffLabel": "Turned Off",
+  "@turnedOffLabel": {
+    "description": ""
+  },
+  "loginMethodLabel": "Login Method",
+  "@loginMethodLabel": {
+    "description": ""
+  },
+  "emailLabel": "Email Address",
+  "@emailLabel": {
+    "description": ""
+  },
+  "passwordLabel": "Password",
+  "@passwordLabel": {
+    "description": ""
+  },
+  "phoneNumberLabel": "Phone Number",
+  "@phoneNumberLabel": {
+    "description": ""
+  },
+  "notAddedYetLabel": "Not added yet",
+  "@notAddedYetLabel": {
+    "description": ""
+  },
+  "addLabel": "Add",
+  "@addLabel": {
+    "description": ""
+  },
+  "signOutLabel": "Sign Out",
+  "@signOutLabel": {
+    "description": ""
+  },
+  "newsletterLabel": "News",
+  "@newsletterLabel": {
+    "description": ""
+  },
+  "myInformationLabel": "My Information",
+  "@myInformationLabel": {
+    "description": ""
+  },
+  "personalDetailsLabel": "Personal Details",
+  "@personalDetailsLabel": {
+    "description": ""
+  },
+  "personalDetailsText": "Used on the platform to host or participate in rounds.",
+  "@personalDetailsText": {
+    "description": ""
+  },
+  "nameLabel": "Name",
+  "@nameLabel": {
+    "description": ""
+  },
+  "jobLabel": "Job",
+  "@jobLabel": {
+    "description": ""
+  },
+  "genderLabel": "Gender",
+  "@genderLabel": {
+    "description": ""
+  },
+  "myThemeLabel": "My Theme",
+  "@myThemeLabel": {
+    "description": ""
+  },
+  "simpleIntroLabel": "Simple Introduction",
+  "@simpleIntroLabel": {
+    "description": ""
+  },
+  "ongoingGroupLabel": "Ongoing Clubs",
+  "@ongoingGroupLabel": {
+    "description": ""
+  },
+  "recruitingGroupLabel": "Recruiting Clubs",
+  "@recruitingGroupLabel": {
+    "description": ""
+  },
+  "viewMoreButton": "View More",
+  "@viewMoreButton": {
+    "description": ""
+  },
+  "membershipOnlyLabel": "Membership Only",
+  "@membershipOnlyLabel": {
+    "description": ""
+  },
+  "hostRegionLabel": "Host Region",
+  "@hostRegionLabel": {
+    "description": ""
+  },
+  "loginLabel": "Sign In",
+  "@loginLabel": {
+    "description": ""
+  },
+  "emailLabel": "Email",
+  "@emailLabel": {
+    "description": ""
+  },
+  "registerFirstText": "For users who have not yet signed up, please sign up first",
+  "@registerFirstText": {
+    "description": ""
+  },
+  "signupLabel": "Sign Up",
+  "@signupLabel": {
+    "description": ""
+  },
+  "otherMethodLabel": "or",
+  "@otherMethodLabel": {
+    "description": ""
+  },
+  "notSigninYetText": "You are not signed in yet",
+  "@notSigninYetText": {
+    "description": ""
+  },
+  "checkInformationText": "Check your information when you sign in",
+  "@checkInformationText": {
+    "description": ""
+  },
+  "googleSigninLabel": "Sign In with Google",
+  "@googleSigninLabel": {
+    "description": ""
+  },
+  "facebookSigninLabel": "Sign In with Facebook",
+  "@facebookSigninLabel": {
+    "description": ""
+  },
+  "lineSigninLabel": "Sign In with Line",
+  "@lineSigninLabel": {
+    "description": ""
+  },
+  "clubSettingsLabel": "Club Settings",
+  "@clubSettingsLabel": {
+    "description": ""
+  },
+  "latestNotificationLabel": "Latest News Notification",
+  "@latestNotificationLabel": {
+    "description": ""
+  },
+  "clubMembersLabel": "Club Members",
+  "@clubMembersLabel": {
+    "description": ""
+  },
+  "viewAllMembersLabel": "View All Members",
+  "@viewAllMembersLabel": {
+    "description": ""
+  },
+  "administratorLabel": "Administrator",
+  "@administratorLabel": {
+    "description": ""
+  },
+  "transferPresidentLabel": "Transfer President Role",
+  "@transferPresidentLabel": {
+    "description": ""
+  },
+  "editClubLabel": "Edit Club",
+  "@editClubLabel": {
+    "description": ""
+  },
+  "leaveClubLabel": "Leave Club",
+  "@leaveClubLabel": {
+    "description": ""
+  },
+  "searchByNameLabel": "Search By Name",
+  "@searchByNameLabel": {
     "description": ""
   }
 }

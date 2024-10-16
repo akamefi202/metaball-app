@@ -1,20 +1,22 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:metaball_app/environment/config.dart';
 import 'package:metaball_app/l10n/l10n.dart';
+import 'package:metaball_app/modules/dashboard/enums/dashboard_screen_tab.dart';
 import 'package:metaball_app/modules/home/widgets/theme_card.dart';
 import 'package:metaball_app/modules/home/widgets/blog_card.dart';
 import 'package:metaball_app/modules/home/widgets/event_card.dart';
 import 'package:metaball_app/modules/home/widgets/round_card.dart';
 import 'package:metaball_app/modules/home/widgets/rounding_tab_button.dart';
 import 'package:metaball_app/modules/home/widgets/tag_button.dart';
-import 'package:metaball_app/modules/shared/models/user_model.dart';
 import 'package:metaball_app/modules/shared/services/dummy_service.dart';
 import 'package:metaball_app/modules/shared/widgets/custom_icon_button.dart';
-import 'package:metaball_app/modules/shared/widgets/outlined_button.dart';
+import 'package:metaball_app/modules/shared/widgets/custom_outlined_button.dart';
 import 'package:metaball_app/modules/shared/widgets/rounded_button.dart';
 import 'package:metaball_app/modules/shared/widgets/separator.dart';
+import 'package:metaball_app/routing/routing.dart';
 import 'package:metaball_app/theme/border_radius.dart';
 import 'package:metaball_app/theme/box_shadow.dart';
 import 'package:metaball_app/theme/colors.dart';
@@ -22,7 +24,9 @@ import 'package:metaball_app/theme/fonts.dart';
 import 'package:metaball_app/theme/spacing.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final Function(DashboardScreenTab tab)? onNavigateToTabPage;
+
+  const HomeScreen({super.key, this.onNavigateToTabPage});
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -30,6 +34,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   late TabController _roundingTabCtrl;
+  final _currentUser = DummyService.getCurrentUser();
 
   @override
   void initState() {
@@ -54,14 +59,15 @@ class _HomeScreenState extends State<HomeScreen>
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          FutureBuilder(
-            future: DummyService.getCurrentUser(),
-            builder: (context, snapshot) {
-              final result = snapshot.data != null
-                  ? snapshot.data as UserModel
-                  : UserModel(id: 'default_id');
-
-              return Row(children: [
+          GestureDetector(
+            onTap: () {
+              debugPrint("home screen - top bar - profile item is pressed");
+              if (widget.onNavigateToTabPage != null) {
+                widget.onNavigateToTabPage!(DashboardScreenTab.profile);
+              }
+            },
+            child: Row(
+              children: [
                 Stack(
                   children: [
                     ClipRRect(
@@ -69,9 +75,9 @@ class _HomeScreenState extends State<HomeScreen>
                       child: Image(
                           width: 34.0,
                           height: 34.0,
-                          image: AssetImage(result.avatar.isEmpty
-                              ? Config.getDefaultAvatar()
-                              : result.avatar)),
+                          image: AssetImage(_currentUser.avatar.isEmpty
+                              ? Config.getDefaultAvatarUrl()
+                              : _currentUser.avatar)),
                     ),
                     Positioned(
                       right: 0,
@@ -88,9 +94,9 @@ class _HomeScreenState extends State<HomeScreen>
                   ],
                 ),
                 SizedBox(width: Spacing.generate(1)),
-                Text(result.fullname),
-              ]);
-            },
+                Text(_currentUser.fullname),
+              ],
+            ),
           ),
           Row(children: [
             CustomIconButton(
@@ -130,7 +136,8 @@ class _HomeScreenState extends State<HomeScreen>
             text: l10n.filterLabel,
             icon: CupertinoIcons.slider_horizontal_3,
             onPressed: () {
-              debugPrint("navigate to round calendar screen");
+              debugPrint("navigate to round list screen");
+              context.push(RouteKey.roundList.location);
             },
           ),
           const SizedBox(width: 30.0),
@@ -139,6 +146,7 @@ class _HomeScreenState extends State<HomeScreen>
             icon: CupertinoIcons.checkmark_shield,
             onPressed: () {
               debugPrint("navigate to club list screen");
+              context.push(RouteKey.clubList.location);
             },
           ),
         ]));
@@ -187,7 +195,11 @@ class _HomeScreenState extends State<HomeScreen>
             RoundedButton(
               text: l10n.viewMoreLabel,
               onPressed: () {
-                debugPrint("round list view more");
+                debugPrint(
+                    "home screen - round list - view more button is pressed");
+                if (widget.onNavigateToTabPage != null) {
+                  widget.onNavigateToTabPage!(DashboardScreenTab.rounding);
+                }
               },
             ),
           ],
@@ -233,15 +245,20 @@ class _HomeScreenState extends State<HomeScreen>
             for (final element in result) {
               widgets.add(
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 6.0),
+                  padding: EdgeInsets.symmetric(
+                      vertical: 0, horizontal: Spacing.generate(0.5)),
                   child: EventCard(model: element),
                 ),
               );
             }
 
             return CarouselSlider(
-              options: CarouselOptions(viewportFraction: 0.9, height: 180.0),
+              options: CarouselOptions(
+                viewportFraction:
+                    (MediaQuery.sizeOf(context).width - Spacing.generate(3)) /
+                        MediaQuery.sizeOf(context).width,
+                height: 180.0,
+              ),
               items: widgets,
             );
           },
@@ -300,9 +317,10 @@ class _HomeScreenState extends State<HomeScreen>
           ),
           SizedBox(height: Spacing.generate(3)),
           CustomOutlinedButton(
-            text: l10n.viewMoreLabel,
+            text: l10n.viewAllThemesLabel,
+            color: ThemeColors.primaryText,
             onPressed: () {
-              debugPrint("view more themes");
+              debugPrint("home screen - view all themes button is pressed");
             },
           ),
         ],
@@ -322,7 +340,7 @@ class _HomeScreenState extends State<HomeScreen>
           color: ThemeColors.primaryBackground,
           boxShadow: [ThemeBoxShadow.baseLight],
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
         ),
         child: Column(
           children: [
@@ -372,7 +390,7 @@ class _HomeScreenState extends State<HomeScreen>
                 return CarouselSlider(
                   options: CarouselOptions(
                     viewportFraction: 0.9,
-                    height: 280,
+                    height: 295,
                   ),
                   items: widgets,
                 );

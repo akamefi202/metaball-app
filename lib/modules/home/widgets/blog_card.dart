@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:metaball_app/modules/shared/models/blog_model.dart';
+import 'package:metaball_app/routing/routing.dart';
 import 'package:metaball_app/theme/colors.dart';
 import 'package:metaball_app/theme/fonts.dart';
 import 'package:metaball_app/theme/spacing.dart';
@@ -20,6 +22,7 @@ class BlogCard extends StatefulWidget {
 class _BlogCardState extends State<BlogCard> {
   Future<void> onPressed() async {
     debugPrint("blog card is pressed");
+    context.push("${RouteKey.blog.location}/${widget.model!.id}");
   }
 
   @override

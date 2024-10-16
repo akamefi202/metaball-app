@@ -3,7 +3,7 @@ enum RoundStatus {
   requested,
   invited,
   completed,
-  followed;
+  followed,
 }
 
 extension RoundStatusExtension on RoundStatus {

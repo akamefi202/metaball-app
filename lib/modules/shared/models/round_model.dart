@@ -1,4 +1,5 @@
 import 'package:metaball_app/modules/shared/enums/round_status.dart';
+import 'package:metaball_app/modules/shared/models/club_model.dart';
 import 'package:metaball_app/modules/shared/models/user_model.dart';
 
 class RoundModel {
@@ -8,15 +9,15 @@ class RoundModel {
   List<String> themeList;
   int cost;
   String location;
-  String mapLink;
+  String golfCourseMapLink;
+  String golfCourseName;
   UserModel? host;
+  ClubModel? club;
   List<UserModel> memberList;
-  int memberCount;
   int maxMemberCount;
+  int memberCount;
   DateTime? startTime;
   int averageScore;
-  String logo;
-  String ownerName;
   RoundStatus status;
 
   RoundModel({
@@ -26,15 +27,15 @@ class RoundModel {
     this.themeList = const [],
     this.cost = 0,
     this.location = '',
-    this.mapLink = '',
+    this.golfCourseMapLink = '',
+    this.golfCourseName = '',
     this.host,
+    this.club,
     this.memberList = const [],
-    this.memberCount = 0,
     this.maxMemberCount = 0,
+    this.memberCount = 0,
     this.startTime,
     this.averageScore = 0,
-    this.logo = '',
-    this.ownerName = '',
     this.status = RoundStatus.hosted,
   });
 

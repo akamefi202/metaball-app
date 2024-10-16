@@ -37,7 +37,7 @@ class _CustomDropdownButtonState extends State<CustomDropdownButton> {
         border: OutlineInputBorder(
           borderSide: const BorderSide(color: ThemeColors.componentBorder),
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
         ),
         // Add more decoration..
       ),
@@ -75,7 +75,7 @@ class _CustomDropdownButtonState extends State<CustomDropdownButton> {
       dropdownStyleData: DropdownStyleData(
         decoration: BoxDecoration(
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
         ),
       ),
       menuItemStyleData: const MenuItemStyleData(

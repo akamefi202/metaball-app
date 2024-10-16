@@ -9,9 +9,9 @@ import 'package:metaball_app/theme/sizes.dart';
 import 'package:metaball_app/theme/spacing.dart';
 
 class RoundRequesterListScreen extends StatefulWidget {
-  final String? id;
+  final String? roundId;
 
-  const RoundRequesterListScreen({super.key, this.id});
+  const RoundRequesterListScreen({super.key, this.roundId});
   @override
   State<RoundRequesterListScreen> createState() =>
       _RoundRequesterListScreenState();

@@ -37,7 +37,7 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
         ),
         decoration: BoxDecoration(
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
           border: Border.all(color: ThemeColors.componentBorder),
         ),
         child: Row(

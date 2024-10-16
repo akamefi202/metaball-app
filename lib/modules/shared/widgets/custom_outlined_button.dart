@@ -12,14 +12,16 @@ class CustomOutlinedButton extends StatefulWidget {
     this.isLoading = false,
     this.text = '',
     this.disabled = false,
+    this.minWidth = 250.0,
+    this.color = ThemeColors.primaryButton,
   });
 
   final VoidCallback? onPressed;
-
   final String text;
-
   final bool isLoading;
   final bool disabled;
+  final double minWidth;
+  final Color color;
 
   @override
   State<CustomOutlinedButton> createState() => _CustomOutlinedButtonState();
@@ -34,14 +36,15 @@ class _CustomOutlinedButtonState extends State<CustomOutlinedButton> {
 
   @override
   Widget build(BuildContext context) {
-    final borderRadius = BorderRadius.circular(BorderRadiusValue.generate(1));
+    final borderRadius = BorderRadius.circular(ThemeBorderRadius.generate(1));
 
     return Opacity(
       opacity: widget.disabled ? 0.5 : 1,
       child: OutlinedButton(
         onPressed: widget.isLoading || widget.disabled ? null : onPressed,
         style: OutlinedButton.styleFrom(
-          minimumSize: const Size(250.0, 0),
+          side: BorderSide(color: widget.color),
+          minimumSize: Size(widget.minWidth, 0),
           padding: EdgeInsets.all(Spacing.generate(2)),
           backgroundColor: ThemeColors.primaryBackground,
           shadowColor: Colors.transparent,
@@ -51,7 +54,9 @@ class _CustomOutlinedButtonState extends State<CustomOutlinedButton> {
             ? const CircularProgressIndicator()
             : Text(
                 widget.text,
-                style: ThemeFonts.of(context).buttonText,
+                style: ThemeFonts.of(context)
+                    .buttonText
+                    .apply(color: widget.color),
               ),
       ),
     );

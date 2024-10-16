@@ -63,7 +63,7 @@ class _MemberScreenState extends State<MemberScreen> {
           color: ThemeColors.primaryBackground,
           boxShadow: [ThemeBoxShadow.baseLight],
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
         ),
         child: Row(
           children: [
@@ -77,7 +77,7 @@ class _MemberScreenState extends State<MemberScreen> {
                       width: 100.0,
                       height: 100.0,
                       image: AssetImage(user.avatar == ''
-                          ? Config.getDefaultAvatar()
+                          ? Config.getDefaultAvatarUrl()
                           : user.avatar),
                     ),
                   ),
@@ -167,8 +167,8 @@ class _MemberScreenState extends State<MemberScreen> {
       Row(
         children: [
           SizedBox(
-            width: 20.0,
-            height: 20.0,
+            width: Sizes.svgIconSize,
+            height: Sizes.svgIconSize,
             child: Center(
               child: SvgPicture.asset("assets/images/bag.svg"),
             ),
@@ -182,8 +182,8 @@ class _MemberScreenState extends State<MemberScreen> {
       Row(
         children: [
           SizedBox(
-            width: 20.0,
-            height: 20.0,
+            width: Sizes.svgIconSize,
+            height: Sizes.svgIconSize,
             child: Center(
               child: SvgPicture.asset("assets/images/location.svg"),
             ),
@@ -197,8 +197,8 @@ class _MemberScreenState extends State<MemberScreen> {
       Row(
         children: [
           SizedBox(
-            width: 20.0,
-            height: 20.0,
+            width: Sizes.svgIconSize,
+            height: Sizes.svgIconSize,
             child: Center(
               child: SvgPicture.asset("assets/images/security.svg"),
             ),
@@ -211,8 +211,7 @@ class _MemberScreenState extends State<MemberScreen> {
       SizedBox(height: Spacing.generate(3)),
       Text(
         user.intro,
-        style:
-            ThemeFonts.of(context).commonTextSingle.apply(heightFactor: 1.33),
+        style: ThemeFonts.of(context).commonTextSingle,
       ),
     ]);
   }
@@ -230,9 +229,8 @@ class _MemberScreenState extends State<MemberScreen> {
               child: Image(
                 width: 60.0,
                 height: 60.0,
-                image: AssetImage(user.avatar == ''
-                    ? Config.getDefaultAvatar()
-                    : user.avatar),
+                image: AssetImage(
+                    e.avatar == '' ? Config.getDefaultAvatarUrl() : e.avatar),
               ),
             ),
             SizedBox(height: Spacing.extraSmallSpacing()),
@@ -262,7 +260,7 @@ class _MemberScreenState extends State<MemberScreen> {
               width: 40.0,
               height: 20.0,
               decoration: BoxDecoration(
-                color: ThemeColors.neutral300,
+                color: ThemeColors.neutral200,
                 borderRadius: BorderRadius.circular(5.0),
               ),
               child: Center(
@@ -270,7 +268,7 @@ class _MemberScreenState extends State<MemberScreen> {
                   "${user.followingList.length}",
                   style: ThemeFonts.of(context)
                       .extraSmallTextSingle
-                      .apply(color: ThemeColors.neutral800),
+                      .apply(color: ThemeColors.secondaryText),
                 ),
               ),
             ),
@@ -346,10 +344,11 @@ class _MemberScreenState extends State<MemberScreen> {
             CustomIconButton(
               icon: SvgPicture.asset(
                 "assets/images/user_plus.svg",
-                width: 25.0,
+                width: Sizes.headerSvgIconSize,
+                height: Sizes.headerSvgIconSize,
               ),
               onPressed: () {
-                debugPrint("follow button is pressed");
+                debugPrint("member screen - follow button is pressed");
               },
             ),
             SizedBox(width: Spacing.generate(2)),
@@ -357,14 +356,14 @@ class _MemberScreenState extends State<MemberScreen> {
               icon: const Icon(CupertinoIcons.chat_bubble,
                   color: ThemeColors.primaryText),
               onPressed: () {
-                debugPrint("dm button is pressed");
+                debugPrint("member screen - dm button is pressed");
               },
             ),
             SizedBox(width: Spacing.generate(2)),
             CustomIconButton(
               icon: const Icon(Icons.block, color: ThemeColors.primaryText),
               onPressed: () {
-                debugPrint("block button is pressed");
+                debugPrint("member screen - block button is pressed");
               },
             ),
             SizedBox(width: Spacing.generate(2)),
@@ -373,7 +372,7 @@ class _MemberScreenState extends State<MemberScreen> {
         body: SingleChildScrollView(
           padding: EdgeInsets.symmetric(
             horizontal: Spacing.pageHorizontalSpacing(),
-            vertical: Spacing.pageHorizontalSpacing(),
+            vertical: Spacing.generate(2),
           ),
           child: FutureBuilder(
             future: DummyService.getUserById(widget.id!),
@@ -382,6 +381,7 @@ class _MemberScreenState extends State<MemberScreen> {
                   ? snapshot.data as UserModel
                   : UserModel(id: 'default_id');
               return Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   renderUserInform(result),
                   renderScreenSpacing(),

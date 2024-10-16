@@ -38,7 +38,7 @@ class _CustomTimePickerState extends State<CustomTimePicker> {
         ),
         decoration: BoxDecoration(
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
           border: Border.all(color: ThemeColors.componentBorder),
         ),
         child: Row(

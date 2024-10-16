@@ -9,11 +9,13 @@ class CircularTextField extends StatefulWidget {
     this.onChanged,
     this.placeholder = '',
     this.keyboardType = TextInputType.text,
+    this.isSearch = false,
   });
 
   final ValueChanged<dynamic>? onChanged;
   final String placeholder;
   final TextInputType keyboardType;
+  final bool isSearch;
 
   @override
   State<CircularTextField> createState() => _CircularTextFieldState();
@@ -24,6 +26,8 @@ class _CircularTextFieldState extends State<CircularTextField> {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
+        prefixIconConstraints: const BoxConstraints(minWidth: 50.0),
+        prefixIcon: widget.isSearch ? const Icon(Icons.search) : null,
         border: OutlineInputBorder(
           borderSide: const BorderSide(color: ThemeColors.componentBorder),
           borderRadius: BorderRadius.circular(20.0),

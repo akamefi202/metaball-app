@@ -28,7 +28,7 @@ class _ThemeCardState extends State<ThemeCard> {
       height: 260.0,
       decoration: BoxDecoration(
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis())),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis())),
       child: Image(image: AssetImage(themeData.image)),
     );
   }

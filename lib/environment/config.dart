@@ -81,7 +81,11 @@ class Config {
     return value;
   }
 
-  static String getDefaultAvatar() {
+  static String getDefaultAvatarUrl() {
     return 'assets/images/default_avatar.png';
+  }
+
+  static String getDefaultLogoUrl() {
+    return 'assets/images/default_logo.png';
   }
 }

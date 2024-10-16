@@ -59,7 +59,7 @@ class _ProvinceCardState extends State<ProvinceCard> {
             width: 2.0,
           ),
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
         ),
         child: SvgPicture.asset(
           getImageUrl(),

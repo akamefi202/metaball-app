@@ -25,7 +25,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get popularThemesLabel => 'Popular Themes';
 
   @override
-  String get viewAllBlogsLabel => 'View All Blogs';
+  String get viewAllThemesLabel => 'View All Themes';
 
   @override
   String get homeLabel => 'Home';
@@ -280,7 +280,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get averageScoreLabel => 'Average Score';
 
   @override
-  String get experienceLabel => 'Golf Calendar';
+  String get experienceLabel => 'Experience';
 
   @override
   String get monthAverageNumberLabel => 'Average Number Per Month';
@@ -311,4 +311,346 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sLabel => '\'s';
+
+  @override
+  String get everyonePostTab => 'Everyone\'s Posts';
+
+  @override
+  String get myPostTab => 'My Posts';
+
+  @override
+  String get repliedPostTab => 'Replied Posts';
+
+  @override
+  String get searchLabel => 'Search';
+
+  @override
+  String get allPostTab => 'All';
+
+  @override
+  String get experiencePostTab => 'Experience';
+
+  @override
+  String get introductionPostTab => 'Introduction';
+
+  @override
+  String get strangeNewsTab => 'Strange News';
+
+  @override
+  String get noBlogText => 'There aren\'t any blogs yet';
+
+  @override
+  String get followedTab => 'Followed';
+
+  @override
+  String get followingTab => 'Following';
+
+  @override
+  String get noFollowerText => 'There aren\'t any followers yet';
+
+  @override
+  String get unfollowButton => 'Unfollow';
+
+  @override
+  String get myClubHeadingText => 'How to join the club with ore friends How to join the club How to join the club with more friends How to join the club How to join the club with more friends How to explain.';
+
+  @override
+  String get searchMoreClubsButton => 'Search For More Clubs';
+
+  @override
+  String get personLabel => 'Person';
+
+  @override
+  String get memberLabel => 'Member';
+
+  @override
+  String get pastEventsLabel => 'Past Events';
+
+  @override
+  String get presidentLabel => 'President';
+
+  @override
+  String get activeRegionLabel => 'Active Region';
+
+  @override
+  String get memberEligibilityLabel => 'Eligibility';
+
+  @override
+  String get createClubLabel => 'Create Club';
+
+  @override
+  String get logoUploadText => 'Add your club logo.\nPlease use JPG, PNG form. The recommended size is 680px or more.\nThe size is less than 4mb.';
+
+  @override
+  String get clubNameLabel => 'Club Name';
+
+  @override
+  String get memberQualificationLabel => 'Member Qualification';
+
+  @override
+  String get ageRestrictionLabel => 'Age Restriction';
+
+  @override
+  String get majorActiveRegionLabel => 'Major Active Region';
+
+  @override
+  String get memberApprovalLabel => 'Member Approval';
+
+  @override
+  String get adminReviewLabel => 'Administrator Review';
+
+  @override
+  String get createRoundPermissionLabel => 'Create Round Permission';
+
+  @override
+  String get presidentAdminPlaceholder => 'President & Administrator';
+
+  @override
+  String get createButton => 'Create';
+
+  @override
+  String get clubIntroLabel => 'Club Introduction';
+
+  @override
+  String get addPhotoLabel => 'Add Photo';
+
+  @override
+  String get galleryLabel => 'Gallery';
+
+  @override
+  String get cameraLabel => 'Camera';
+
+  @override
+  String get pickImageLabel => 'Select an image';
+
+  @override
+  String get viewAllReviewButton => 'View All Reviews';
+
+  @override
+  String get contributorLabel => 'Contributor';
+
+  @override
+  String get reviewLabel => 'レビュー';
+
+  @override
+  String get caseLabel => '件';
+
+  @override
+  String get minuteBeforeLabel => 'Minute(s) Ago';
+
+  @override
+  String get hourBeforeLabel => 'Hour(s) Ago';
+
+  @override
+  String get dayBeforeLabel => 'Day(s) Ago';
+
+  @override
+  String get monthBeforeLabel => 'Month(s) Ago';
+
+  @override
+  String get yearBeforeLabel => 'Year(s) Ago';
+
+  @override
+  String get textInputPlaceholder => 'Text Input';
+
+  @override
+  String get hostMemberLabel => 'Host';
+
+  @override
+  String get participatedLabel => 'Participated';
+
+  @override
+  String get requestButton => 'Request';
+
+  @override
+  String get chatButton => 'Chat';
+
+  @override
+  String get recruitButton => 'Invite';
+
+  @override
+  String get filteredResultLabel => 'Filtered Results';
+
+  @override
+  String get recruitAllButton => 'Invite All';
+
+  @override
+  String get maleOnlyLabel => 'Male Only';
+
+  @override
+  String get femaleOnlyLabel => 'Female Only';
+
+  @override
+  String get unlimitedLabel => 'Unlimited';
+
+  @override
+  String get confirmButton => 'Confirm';
+
+  @override
+  String get golfClubCountLabel => 'Number of golf clubs';
+
+  @override
+  String get editButton => 'Edit';
+
+  @override
+  String get deleteButton => 'Delete';
+
+  @override
+  String get classificationLabel => 'Classification';
+
+  @override
+  String get titleLabel => 'Title';
+
+  @override
+  String get otherLabel => 'Other';
+
+  @override
+  String get imageVideoLabel => 'Image & Video';
+
+  @override
+  String get cancelButton => 'Cancel';
+
+  @override
+  String get postButton => 'Post';
+
+  @override
+  String get leaveFeedbackLabel => 'Leave a Message';
+
+  @override
+  String get allowLabel => 'Allow';
+
+  @override
+  String get disallowLable => 'Disallow';
+
+  @override
+  String get detailedInformLabel => 'Details';
+
+  @override
+  String get imageUploadText => 'Dimensions of the number of pictures and video size limits. Please give me some advice.';
+
+  @override
+  String get noticeLabel => 'Notification';
+
+  @override
+  String get turnedOnLabel => 'Turned On';
+
+  @override
+  String get turnedOffLabel => 'Turned Off';
+
+  @override
+  String get loginMethodLabel => 'Login Method';
+
+  @override
+  String get emailLabel => 'Email';
+
+  @override
+  String get passwordLabel => 'Password';
+
+  @override
+  String get phoneNumberLabel => 'Phone Number';
+
+  @override
+  String get notAddedYetLabel => 'Not added yet';
+
+  @override
+  String get addLabel => 'Add';
+
+  @override
+  String get signOutLabel => 'Sign Out';
+
+  @override
+  String get newsletterLabel => 'News';
+
+  @override
+  String get myInformationLabel => 'My Information';
+
+  @override
+  String get personalDetailsLabel => 'Personal Details';
+
+  @override
+  String get personalDetailsText => 'Used on the platform to host or participate in rounds.';
+
+  @override
+  String get nameLabel => 'Name';
+
+  @override
+  String get jobLabel => 'Job';
+
+  @override
+  String get genderLabel => 'Gender';
+
+  @override
+  String get myThemeLabel => 'My Theme';
+
+  @override
+  String get simpleIntroLabel => 'Simple Introduction';
+
+  @override
+  String get ongoingGroupLabel => 'Ongoing Clubs';
+
+  @override
+  String get recruitingGroupLabel => 'Recruiting Clubs';
+
+  @override
+  String get viewMoreButton => 'View More';
+
+  @override
+  String get membershipOnlyLabel => 'Membership Only';
+
+  @override
+  String get hostRegionLabel => 'Host Region';
+
+  @override
+  String get loginLabel => 'Sign In';
+
+  @override
+  String get registerFirstText => 'For users who have not yet signed up, please sign up first';
+
+  @override
+  String get signupLabel => 'Sign Up';
+
+  @override
+  String get otherMethodLabel => 'or';
+
+  @override
+  String get notSigninYetText => 'You are not signed in yet';
+
+  @override
+  String get checkInformationText => 'Check your information when you sign in';
+
+  @override
+  String get googleSigninLabel => 'Sign In with Google';
+
+  @override
+  String get facebookSigninLabel => 'Sign In with Facebook';
+
+  @override
+  String get lineSigninLabel => 'Sign In with Line';
+
+  @override
+  String get clubSettingsLabel => 'Club Settings';
+
+  @override
+  String get latestNotificationLabel => 'Latest News Notification';
+
+  @override
+  String get clubMembersLabel => 'Club Members';
+
+  @override
+  String get viewAllMembersLabel => 'View All Members';
+
+  @override
+  String get administratorLabel => 'Administrator';
+
+  @override
+  String get transferPresidentLabel => 'Transfer President Role';
+
+  @override
+  String get editClubLabel => 'Edit Club';
+
+  @override
+  String get leaveClubLabel => 'Leave Club';
+
+  @override
+  String get searchByNameLabel => 'Search By Name';
 }

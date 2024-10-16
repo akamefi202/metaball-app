@@ -5,4 +5,6 @@ class Sizes {
   static const double buttonHeight = 44;
   static const double listLoaderHeight = 180;
   static const double profileImageWidth = 120;
+  static const double svgIconSize = 20;
+  static const double headerSvgIconSize = 20;
 }

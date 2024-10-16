@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:metaball_app/l10n/l10n.dart';
-import 'package:metaball_app/modules/message/enums/message_sender.dart';
+import 'package:metaball_app/modules/message/enums/message_sender_type.dart';
 import 'package:metaball_app/modules/message/models/message_sender_model.dart';
-import 'package:metaball_app/modules/message/widgets/sender_item.dart';
+import 'package:metaball_app/modules/message/widgets/message_sender_item.dart';
 import 'package:metaball_app/modules/shared/services/dummy_service.dart';
 import 'package:metaball_app/modules/shared/widgets/custom_icon_button.dart';
 import 'package:metaball_app/theme/colors.dart';
@@ -63,8 +63,8 @@ class _MessageScreenState extends State<MessageScreen>
           children: [
             SvgPicture.asset(
               'assets/images/message.svg',
-              width: Spacing.generate(3),
-              height: Spacing.generate(3),
+              width: 25.0,
+              height: 25.0,
             ),
             SizedBox(height: Spacing.generate(3)),
             Text(l10n.noMessageText1,
@@ -81,7 +81,8 @@ class _MessageScreenState extends State<MessageScreen>
     }
     return SingleChildScrollView(
       child: Column(
-          children: senderList.map((e) => SenderItem(model: e)).toList()),
+          children:
+              senderList.map((e) => MessageSenderItem(model: e)).toList()),
     );
   }
 
@@ -125,10 +126,10 @@ class _MessageScreenState extends State<MessageScreen>
             controller: _tabCtrl,
             children: [
               _renderMessageSenderList(result
-                  .where((e) => e.senderType == MessageSender.user)
+                  .where((e) => e.senderType == MessageSenderType.user)
                   .toList()),
               _renderMessageSenderList(result
-                  .where((e) => e.senderType == MessageSender.club)
+                  .where((e) => e.senderType == MessageSenderType.club)
                   .toList()),
             ],
           );

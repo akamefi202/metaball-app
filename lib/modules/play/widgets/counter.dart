@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:metaball_app/theme/colors.dart';
 import 'package:metaball_app/theme/fonts.dart';
@@ -20,10 +19,6 @@ class Counter extends StatefulWidget {
 }
 
 class _CounterState extends State<Counter> {
-  Future<void> onPressed() async {
-    debugPrint("hashtag card is pressed");
-  }
-
   @override
   Widget build(BuildContext context) {
     return Row(children: [

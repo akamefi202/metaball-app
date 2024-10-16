@@ -1,13 +1,15 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:metaball_app/environment/config.dart';
 import 'package:metaball_app/modules/message/models/message_sender_model.dart';
+import 'package:metaball_app/routing/routing.dart';
 import 'package:metaball_app/theme/colors.dart';
 import 'package:metaball_app/theme/fonts.dart';
 import 'package:metaball_app/theme/spacing.dart';
 
-class SenderItem extends StatefulWidget {
-  const SenderItem({
+class MessageSenderItem extends StatefulWidget {
+  const MessageSenderItem({
     super.key,
     this.model,
   });
@@ -15,12 +17,13 @@ class SenderItem extends StatefulWidget {
   final MessageSenderModel? model;
 
   @override
-  State<SenderItem> createState() => _SenderItemState();
+  State<MessageSenderItem> createState() => _MessageSenderItemState();
 }
 
-class _SenderItemState extends State<SenderItem> {
+class _MessageSenderItemState extends State<MessageSenderItem> {
   Future<void> onPressed() async {
-    debugPrint("sender item onPressed");
+    debugPrint("message sender item is pressed");
+    context.push(RouteKey.chatting.location);
   }
 
   String getLastDate(DateTime date) {
@@ -55,7 +58,7 @@ class _SenderItemState extends State<SenderItem> {
                 width: 48.0,
                 height: 48.0,
                 image: AssetImage(senderData.senderAvatar.isEmpty
-                    ? Config.getDefaultAvatar()
+                    ? Config.getDefaultAvatarUrl()
                     : senderData.senderAvatar),
               ),
             ),

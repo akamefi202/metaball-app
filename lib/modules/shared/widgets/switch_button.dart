@@ -7,12 +7,12 @@ class SwitchButton extends StatefulWidget {
   const SwitchButton({
     super.key,
     this.onChanged,
-    this.text,
+    this.text = '',
     this.value = false,
   });
 
   final ValueChanged<bool>? onChanged;
-  final String? text;
+  final String text;
   final bool value;
 
   @override
@@ -29,10 +29,9 @@ class _SwitchButtonState extends State<SwitchButton> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Text(
-          widget.text!,
+          widget.text,
           style:
               const TextStyle(fontSize: 15.0, color: ThemeColors.primaryButton),
         ),

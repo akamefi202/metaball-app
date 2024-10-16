@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:metaball_app/theme/fonts.dart';
+import 'package:metaball_app/theme/sizes.dart';
 import 'package:metaball_app/theme/spacing.dart';
 
 class CustomMenuItem extends StatefulWidget {
@@ -43,8 +44,8 @@ class _CustomMenuItemState extends State<CustomMenuItem> {
         ),
         child: Row(children: [
           SizedBox(
-            width: 21.0,
-            height: 21.0,
+            width: Sizes.svgIconSize,
+            height: Sizes.svgIconSize,
             child: Center(
               child: SvgPicture.asset(widget.icon),
             ),

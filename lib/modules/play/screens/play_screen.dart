@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:date_picker_plus/date_picker_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:metaball_app/l10n/l10n.dart';
+import 'package:metaball_app/modules/dashboard/enums/dashboard_screen_tab.dart';
 import 'package:metaball_app/modules/home/widgets/event_card.dart';
 import 'package:metaball_app/modules/home/widgets/round_card.dart';
 import 'package:metaball_app/modules/home/widgets/theme_card.dart';
@@ -27,7 +28,9 @@ import 'package:metaball_app/theme/fonts.dart';
 import 'package:metaball_app/theme/spacing.dart';
 
 class PlayScreen extends StatefulWidget {
-  const PlayScreen({super.key});
+  final Function(DashboardScreenTab tab)? onNavigateToTabPage;
+
+  const PlayScreen({super.key, this.onNavigateToTabPage});
   @override
   State<PlayScreen> createState() => _PlayScreenState();
 }
@@ -36,8 +39,6 @@ class _PlayScreenState extends State<PlayScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabCtrl;
   bool _roundRecruit = false;
-  List<String> _themeOptions = [];
-  List<String> _restrictionOptions = [];
 
   RoundHostType _roundHostType = RoundHostType.personal;
   Province _hostProvince = Province.japan;
@@ -121,14 +122,14 @@ class _PlayScreenState extends State<PlayScreen>
       ),
       child: GestureDetector(
         onTap: () {
-          debugPrint("search bar is pressed in play screen");
+          debugPrint("play screen - search bar is pressed");
         },
         child: Container(
           padding: EdgeInsets.all(Spacing.generate(1)),
           decoration: BoxDecoration(
             color: ThemeColors.secondaryBackground,
             borderRadius: BorderRadius.circular(
-                BorderRadiusValue.componentBorderRaduis()),
+                ThemeBorderRadius.componentBorderRaduis()),
           ),
           child: Row(
             children: [
@@ -169,12 +170,11 @@ class _PlayScreenState extends State<PlayScreen>
           FutureBuilder(
             future: DummyService.getThemesList(),
             builder: (context, snapshot) {
-              final result = snapshot.data ?? [];
-              final shortResult =
-                  result.length > 6 ? result.getRange(0, 6) : result;
+              final themeList = snapshot.data ?? [];
+              final shortThemeList = themeList.take(6);
               final widgets = <Widget>[];
 
-              for (final element in shortResult) {
+              for (final element in shortThemeList) {
                 widgets.add(SizedBox(
                   width: (MediaQuery.of(context).size.width -
                           Spacing.generate(6)) /
@@ -228,7 +228,11 @@ class _PlayScreenState extends State<PlayScreen>
           RoundedButton(
             text: l10n.viewMoreLabel,
             onPressed: () {
-              debugPrint("round list view more");
+              debugPrint(
+                  "play screen - round list - view more button is pressed");
+              if (widget.onNavigateToTabPage != null) {
+                widget.onNavigateToTabPage!(DashboardScreenTab.rounding);
+              }
             },
           ),
         ],
@@ -273,15 +277,20 @@ class _PlayScreenState extends State<PlayScreen>
             for (final element in result) {
               widgets.add(
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 6.0),
+                  padding: EdgeInsets.symmetric(
+                      vertical: 0, horizontal: Spacing.generate(0.5)),
                   child: EventCard(model: element),
                 ),
               );
             }
 
             return CarouselSlider(
-              options: CarouselOptions(viewportFraction: 0.9, height: 180.0),
+              options: CarouselOptions(
+                viewportFraction:
+                    (MediaQuery.sizeOf(context).width - Spacing.generate(3)) /
+                        MediaQuery.sizeOf(context).width,
+                height: 180.0,
+              ),
               items: widgets,
             );
           },
@@ -676,8 +685,7 @@ class _PlayScreenState extends State<PlayScreen>
       top: true,
       child: Scaffold(
         body: Padding(
-          padding:
-              EdgeInsets.symmetric(vertical: Spacing.pageHorizontalSpacing()),
+          padding: EdgeInsets.symmetric(vertical: Spacing.generate(2)),
           child: Column(
             children: [
               renderTopBar(),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:metaball_app/environment/config.dart';
 import 'package:metaball_app/l10n/l10n.dart';
+import 'package:metaball_app/modules/shared/enums/circular_button_style.dart';
 import 'package:metaball_app/modules/shared/models/user_model.dart';
 import 'package:metaball_app/modules/shared/widgets/circular_button.dart';
 import 'package:metaball_app/routing/routing.dart';
@@ -14,9 +15,11 @@ class RequesterCard extends StatefulWidget {
   const RequesterCard({
     super.key,
     this.model,
+    this.isParticipated = false,
   });
 
   final UserModel? model;
+  final bool isParticipated;
 
   @override
   State<RequesterCard> createState() => _RequesterCardState();
@@ -59,34 +62,45 @@ class _RequesterCardState extends State<RequesterCard> {
                           width: 48.0,
                           height: 48.0,
                           image: AssetImage(userData.avatar.isEmpty
-                              ? Config.getDefaultAvatar()
+                              ? Config.getDefaultAvatarUrl()
                               : userData.avatar)),
                     ),
                     SizedBox(width: Spacing.generate(1.5)),
                     Text(userData.fullname,
                         style: ThemeFonts.of(context).commonTextSingle),
+                    SizedBox(width: Spacing.generate(1.5)),
                   ],
                 ),
               ),
             ),
-            Row(
-              children: [
-                CircularButton(
-                  text: l10n.rejectButton,
-                  buttonStyle: CircularButtonStyle.outlined,
-                  onPressed: () {
-                    debugPrint("request reject button is pressed");
-                  },
-                ),
-                SizedBox(width: Spacing.generate(1.5)),
-                CircularButton(
-                  text: l10n.acceptButton,
-                  onPressed: () {
-                    debugPrint("request accept button is pressed");
-                  },
-                ),
-              ],
-            ),
+            widget.isParticipated
+                ? CircularButton(
+                    text: l10n.removeButton,
+                    color: ThemeColors.primaryDarkBackground,
+                    onPressed: () {
+                      debugPrint("requester card - remove button is pressed");
+                    },
+                  )
+                : Row(
+                    children: [
+                      CircularButton(
+                        text: l10n.rejectButton,
+                        buttonStyle: CircularButtonStyle.outlined,
+                        onPressed: () {
+                          debugPrint(
+                              "requester card - reject button is pressed");
+                        },
+                      ),
+                      SizedBox(width: Spacing.generate(1.5)),
+                      CircularButton(
+                        text: l10n.acceptButton,
+                        onPressed: () {
+                          debugPrint(
+                              "requester card - accept button is pressed");
+                        },
+                      ),
+                    ],
+                  ),
           ],
         ),
       ),

@@ -1,4 +1,4 @@
-import 'package:metaball_app/modules/message/enums/message_sender.dart';
+import 'package:metaball_app/modules/message/enums/message_sender_type.dart';
 
 class MessageSenderModel {
   String id;
@@ -6,7 +6,7 @@ class MessageSenderModel {
   DateTime? lastTime;
   String senderAvatar;
   String senderName;
-  MessageSender senderType;
+  MessageSenderType senderType;
 
   MessageSenderModel({
     required this.id,
@@ -14,7 +14,7 @@ class MessageSenderModel {
     this.lastTime,
     this.senderAvatar = '',
     this.senderName = '',
-    this.senderType = MessageSender.user,
+    this.senderType = MessageSenderType.user,
   });
 
   static MessageSenderModel fromJson(Map<String, dynamic> jsonValue) {

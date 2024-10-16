@@ -134,8 +134,8 @@ abstract class AppLocalizations {
   ///
   ///
   /// In en, this message translates to:
-  /// **'View All Blogs'**
-  String get viewAllBlogsLabel;
+  /// **'View All Themes'**
+  String get viewAllThemesLabel;
 
   ///
   ///
@@ -644,7 +644,7 @@ abstract class AppLocalizations {
   /// No description provided for @experienceLabel.
   ///
   /// In en, this message translates to:
-  /// **'Golf Calendar'**
+  /// **'Experience'**
   String get experienceLabel;
 
   ///
@@ -706,6 +706,690 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'\'s'**
   String get sLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone\'s Posts'**
+  String get everyonePostTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'My Posts'**
+  String get myPostTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Replied Posts'**
+  String get repliedPostTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get searchLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get allPostTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get experiencePostTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Introduction'**
+  String get introductionPostTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Strange News'**
+  String get strangeNewsTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'There aren\'t any blogs yet'**
+  String get noBlogText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Followed'**
+  String get followedTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Following'**
+  String get followingTab;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'There aren\'t any followers yet'**
+  String get noFollowerText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Unfollow'**
+  String get unfollowButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'How to join the club with ore friends How to join the club How to join the club with more friends How to join the club How to join the club with more friends How to explain.'**
+  String get myClubHeadingText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Search For More Clubs'**
+  String get searchMoreClubsButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Person'**
+  String get personLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Member'**
+  String get memberLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Past Events'**
+  String get pastEventsLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'President'**
+  String get presidentLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Active Region'**
+  String get activeRegionLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Eligibility'**
+  String get memberEligibilityLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Create Club'**
+  String get createClubLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Add your club logo.\nPlease use JPG, PNG form. The recommended size is 680px or more.\nThe size is less than 4mb.'**
+  String get logoUploadText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Club Name'**
+  String get clubNameLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Member Qualification'**
+  String get memberQualificationLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Age Restriction'**
+  String get ageRestrictionLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Major Active Region'**
+  String get majorActiveRegionLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Member Approval'**
+  String get memberApprovalLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Administrator Review'**
+  String get adminReviewLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Create Round Permission'**
+  String get createRoundPermissionLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'President & Administrator'**
+  String get presidentAdminPlaceholder;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Create'**
+  String get createButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Club Introduction'**
+  String get clubIntroLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Add Photo'**
+  String get addPhotoLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Gallery'**
+  String get galleryLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Camera'**
+  String get cameraLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Select an image'**
+  String get pickImageLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'View All Reviews'**
+  String get viewAllReviewButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Contributor'**
+  String get contributorLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'レビュー'**
+  String get reviewLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'件'**
+  String get caseLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Minute(s) Ago'**
+  String get minuteBeforeLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Hour(s) Ago'**
+  String get hourBeforeLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Day(s) Ago'**
+  String get dayBeforeLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Month(s) Ago'**
+  String get monthBeforeLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Year(s) Ago'**
+  String get yearBeforeLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Text Input'**
+  String get textInputPlaceholder;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Host'**
+  String get hostMemberLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Participated'**
+  String get participatedLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Request'**
+  String get requestButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Chat'**
+  String get chatButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Invite'**
+  String get recruitButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Filtered Results'**
+  String get filteredResultLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Invite All'**
+  String get recruitAllButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Male Only'**
+  String get maleOnlyLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Female Only'**
+  String get femaleOnlyLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited'**
+  String get unlimitedLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirmButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Number of golf clubs'**
+  String get golfClubCountLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get editButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get deleteButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Classification'**
+  String get classificationLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get titleLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get otherLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Image & Video'**
+  String get imageVideoLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancelButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Post'**
+  String get postButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Leave a Message'**
+  String get leaveFeedbackLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get allowLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Disallow'**
+  String get disallowLable;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get detailedInformLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Dimensions of the number of pictures and video size limits. Please give me some advice.'**
+  String get imageUploadText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Notification'**
+  String get noticeLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Turned On'**
+  String get turnedOnLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Turned Off'**
+  String get turnedOffLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Login Method'**
+  String get loginMethodLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get emailLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get passwordLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number'**
+  String get phoneNumberLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Not added yet'**
+  String get notAddedYetLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get addLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Out'**
+  String get signOutLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'News'**
+  String get newsletterLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'My Information'**
+  String get myInformationLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Personal Details'**
+  String get personalDetailsLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Used on the platform to host or participate in rounds.'**
+  String get personalDetailsText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get nameLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Job'**
+  String get jobLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Gender'**
+  String get genderLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'My Theme'**
+  String get myThemeLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Simple Introduction'**
+  String get simpleIntroLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Ongoing Clubs'**
+  String get ongoingGroupLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Recruiting Clubs'**
+  String get recruitingGroupLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'View More'**
+  String get viewMoreButton;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Membership Only'**
+  String get membershipOnlyLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Host Region'**
+  String get hostRegionLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In'**
+  String get loginLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'For users who have not yet signed up, please sign up first'**
+  String get registerFirstText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get signupLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'or'**
+  String get otherMethodLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'You are not signed in yet'**
+  String get notSigninYetText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Check your information when you sign in'**
+  String get checkInformationText;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In with Google'**
+  String get googleSigninLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In with Facebook'**
+  String get facebookSigninLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In with Line'**
+  String get lineSigninLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Club Settings'**
+  String get clubSettingsLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Latest News Notification'**
+  String get latestNotificationLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Club Members'**
+  String get clubMembersLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'View All Members'**
+  String get viewAllMembersLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Administrator'**
+  String get administratorLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Transfer President Role'**
+  String get transferPresidentLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Club'**
+  String get editClubLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Leave Club'**
+  String get leaveClubLabel;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Search By Name'**
+  String get searchByNameLabel;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -28,7 +28,7 @@ class _RoundedTextFieldState extends State<RoundedTextField> {
         border: OutlineInputBorder(
           borderSide: const BorderSide(color: ThemeColors.componentBorder),
           borderRadius:
-              BorderRadius.circular(BorderRadiusValue.componentBorderRaduis()),
+              BorderRadius.circular(ThemeBorderRadius.componentBorderRaduis()),
         ),
         hintStyle: ThemeFonts.of(context)
             .smallTextSingle

@@ -25,7 +25,7 @@ class RoundCard extends StatefulWidget {
 class _RoundCardState extends State<RoundCard> {
   Future<void> onPressed() async {
     debugPrint("round card is pressed");
-    context.push('${RouteKey.roundRequesterList.location}/${widget.model!.id}');
+    context.push('${RouteKey.round.location}/${widget.model!.id}');
   }
 
   @override
@@ -53,15 +53,15 @@ class _RoundCardState extends State<RoundCard> {
                 Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(
-                          BorderRadiusValue.componentBorderRaduis())),
+                          ThemeBorderRadius.componentBorderRaduis())),
                   child: Image(
                     width: 32,
                     height: 32,
-                    image: AssetImage(roundData.logo),
+                    image: AssetImage(roundData.club!.logo),
                   ),
                 ),
                 const SizedBox(height: 3.0),
-                Text(roundData.ownerName,
+                Text(roundData.host!.fullname,
                     style: const TextStyle(fontSize: 6.0)),
               ],
             ),

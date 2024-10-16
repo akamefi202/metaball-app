@@ -24,7 +24,7 @@ class _EventCardState extends State<EventCard> {
     final eventData = widget.model!;
 
     return ClipRRect(
-      borderRadius: BorderRadius.circular(5.0),
+      borderRadius: BorderRadius.circular(10.0),
       child: Image(
         height: 180.0,
         fit: BoxFit.fitHeight,

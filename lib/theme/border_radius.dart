@@ -1,4 +1,4 @@
-class BorderRadiusValue {
+class ThemeBorderRadius {
   static const double _baseRadius = 8;
 
   static double generate(double value) {

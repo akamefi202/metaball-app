@@ -1,13 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:metaball_app/modules/shared/enums/circular_button_style.dart';
 import 'package:metaball_app/theme/colors.dart';
 import 'package:metaball_app/theme/fonts.dart';
 import 'package:metaball_app/theme/spacing.dart';
-
-enum CircularButtonStyle {
-  elevated,
-  outlined,
-}
 
 class CircularButton extends StatefulWidget {
   const CircularButton({
@@ -16,19 +12,18 @@ class CircularButton extends StatefulWidget {
     this.isLoading = false,
     this.text = '',
     this.disabled = false,
-    this.fillColor = ThemeColors.primaryButton,
+    this.color = ThemeColors.primaryButton,
     this.buttonStyle = CircularButtonStyle.elevated,
+    this.minimumSize,
   });
 
   final VoidCallback? onPressed;
-
   final String text;
-
   final bool isLoading;
   final bool disabled;
-
-  final Color fillColor;
+  final Color color;
   final CircularButtonStyle buttonStyle;
+  final Size? minimumSize;
 
   @override
   State<CircularButton> createState() => _CircularButtonState();
@@ -48,13 +43,14 @@ class _CircularButtonState extends State<CircularButton> {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
+          minimumSize: widget.minimumSize,
           side: BorderSide(
               color: widget.buttonStyle == CircularButtonStyle.elevated
                   ? Colors.transparent
-                  : ThemeColors.primaryButton),
+                  : widget.color),
           padding: EdgeInsets.symmetric(horizontal: Spacing.generate(2)),
           backgroundColor: widget.buttonStyle == CircularButtonStyle.elevated
-              ? widget.fillColor
+              ? widget.color
               : ThemeColors.neutral100,
           shadowColor: Colors.transparent,
           shape: RoundedRectangleBorder(
@@ -66,7 +62,7 @@ class _CircularButtonState extends State<CircularButton> {
           style: ThemeFonts.of(context).buttonText.apply(
               color: widget.buttonStyle == CircularButtonStyle.elevated
                   ? ThemeColors.primaryDarkText
-                  : ThemeColors.primaryButton),
+                  : widget.color),
         ),
       ),
     );
